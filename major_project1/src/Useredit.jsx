@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { updateuser } from './api/userService';
 import { useNavigate } from 'react-router-dom';
-import './Useredit.css'; // Import custom styles if needed
 
 const Useredit = () => {
   const navigate = useNavigate();
@@ -45,38 +44,42 @@ const Useredit = () => {
   };
 
   return (
-    <div className="user-edit-container">
+    <div className="useredit-boss">
       {error && <div className="error-message">{error}</div>}
-      <h2>Edit User</h2>
-      <form onSubmit={edit}>
-        <label>Name</label>
+      <h2 className='useredit-boss'>Edit User</h2>
+      <form onSubmit={edit} className='useredit-form'>
+        {/* <label>Name</label> */}
         <input
+        className='useredit-input'
           type="text"
           value={name}
           onChange={(e) => updatename(e.target.value)}
           required
         /> <br />
         
-        <label>Email</label>
+        {/* <label>Email</label> */}
         <input
+        className='useredit-input'
           type="email"
           value={email}
           onChange={(e) => updateemail(e.target.value)}
           required
         /> <br />
         
-        <label>Password</label>
+        {/* <label>Password</label> */}
         <input
+        className='useredit-input'
           type="password"
           value={password}
           onChange={(e) => updatepassword(e.target.value)}
           required
         /> <br />
 
-        <button type="submit" disabled={isUpdated || !name || !email || !password}>
+        <button type="submit" disabled={isUpdated || !name || !email || !password} className='useredit-btn'>
           Update
         </button>
       </form>
+      
     </div>
   );
 };

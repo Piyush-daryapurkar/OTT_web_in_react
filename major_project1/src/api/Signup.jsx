@@ -32,7 +32,7 @@ const Signup = () => {
       <h2>Signup</h2>
       {error && <div className="error-message">{error}</div>}
       <form onSubmit={handleSubmit}>
-        <label>Name</label>
+        {/* <label>Name</label> */}
         <input
           type="text"
           value={name}
@@ -41,7 +41,7 @@ const Signup = () => {
         />
         <br />
         
-        <label>Email</label>
+        {/* <label>Email</label> */}
         <input
           type="email"
           value={email}
@@ -50,7 +50,7 @@ const Signup = () => {
         />
         <br />
         
-        <label>Password</label>
+        {/* <label>Password</label> */}
         <input
           type="password"
           value={password}

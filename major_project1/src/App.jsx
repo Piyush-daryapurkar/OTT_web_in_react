@@ -5,6 +5,7 @@ import Nav from './Nav';
 import Useredit from './Useredit';
 import Login from './USER/Login';
 import User_profile from './USER/User_profile';
+import Home from './Home';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
@@ -13,7 +14,9 @@ function App() {
       <Router>
         <Nav />
         <Routes>
+          
           <Route path="/" element={<User_signup />} />
+          <Route path="/home" element={<Home/>} />
           <Route path="/admin" element={<Admin />} />
           <Route path="/useredit/:id" element={<Useredit />} />
           <Route path="/login" element={<Login />} />

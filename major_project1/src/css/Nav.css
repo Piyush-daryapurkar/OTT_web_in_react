@@ -2,11 +2,12 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+    font: inherit;
 }
 nav{
-    height: 10vh;
+    height: 12vh;
     width: 100%;
-    background-color: black;
+    background-color: rgb(2, 21, 53);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -17,18 +18,48 @@ nav ul{
     list-style: none;
     margin-right: 20px;
 }
-nav ul li a{
-text-decoration: none;
-font-size: 22px;
-letter-spacing: 1px;
-color: white;
+.search input{
+    width: 460px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid rgb(135, 136, 137);
+    background-color: rgb(2, 21, 53);
+    color: rgb(142, 31, 31);
 }
-nav ul li a:hover{
-    text-decoration: none;
+.log a{
+    border:1px solid;
+    padding: 10px;
+    background-color:rgb(21, 23, 77);
+    border-radius: 7px;
+    border: 1px solid rgb(135, 136, 137);
+    font-size: 20px;
+}
+.log a:hover{
+        text-decoration: none;
     font-size: 22px;
     letter-spacing: 1px;
     color: black;
     background-color: white;
     padding: 5px;
     border-radius: 5px;
-    }
+    transition: .4s;
+
+}
+nav ul li a{
+text-decoration: none;
+font-size: 20px;
+letter-spacing: 1px;
+color: white;
+}
+
+nav ul li a:hover{
+    text-decoration: none;
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: black;
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+    transition: .4s;
+}

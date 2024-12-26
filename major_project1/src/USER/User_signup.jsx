@@ -1,5 +1,5 @@
 import React,{useState,useEffect} from 'react'
-import Signup from './Signup'
+import Signup from '../api/Signup'
 import { adduser } from '../api/userService'
 import { useNavigate } from 'react-router-dom'
 const User_signup = () => {
@@ -30,14 +30,18 @@ const User_signup = () => {
     }
       return (
         <>
-        {email}
-        <form action="">
-        <input type="text" value={name} onChange={(e)=>updatename(e.target.value)} /> <br />
-        <input type="text" value={email} onChange={(e)=>updateemail(e.target.value)}/> <br />
+        
+      <div className="user_boss">
+        <h1 className='user-h1'>Signup here</h1>
+      <form action="" className='user-form'>
+        <input className='user-input' type="text" value={name} onChange={(e)=>updatename(e.target.value)}  placeholder='Enter Your Name'/> <br />
+        <input className='user-input' type="text" value={email} onChange={(e)=>updateemail(e.target.value)} placeholder='Enter Your Email'/> <br />
 
-        <input type="text"  value={password} onChange={(e)=>updatepassword(e.target.value)}/> <br />
-        <button onClick={adddata}>signup</button>
+        <input className='user-input' type="text"  value={password} onChange={(e)=>updatepassword(e.target.value)}placeholder='Enter Your Password'/> <br />
+        <button className='user-btn' onClick={adddata}>signup</button><br></br><br />
+        <p className='user-para'>if you are allredy registerd or signup so go to <span className='user-span'>login</span></p>
         </form>
+      </div>
         </>
       )
       

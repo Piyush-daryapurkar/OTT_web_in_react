@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { getuser } from '../api/userService';
 import { useNavigate } from 'react-router-dom';
+import '../css/login.css'
 
 const Login = () => {
   const navigate=useNavigate();
@@ -42,11 +43,13 @@ const Login = () => {
 
   return (
     <>
-      <h1>Login Here</h1>
-      <form onSubmit={user_login}>
+     <div className="login-boss">
+     <h1 className='login-h1'>Login Here</h1>
+      <form className='login-form' onSubmit={user_login}>
         <div>
-          <label>Email: </label>
-          <input
+          {/* <label>Email: </label> */}
+          <input 
+            className='login-input'
             type="email"
             value={email}
             onChange={(e) => updateemail(e.target.value)}
@@ -55,8 +58,9 @@ const Login = () => {
           />
         </div>
         <div>
-          <label>Password: </label>
+          {/* <label>Password: </label> */}
           <input
+           className='login-input'
             type="password"
             value={password}
             onChange={(e) => updatepassword(e.target.value)}
@@ -65,8 +69,9 @@ const Login = () => {
           />
         </div>
         {error && <p style={{ color: 'red' }}>{error}</p>} {/* Display error */}
-        <button type="submit">Login</button>
+        <button className='login-btn' type="submit">Login</button>
       </form>
+     </div>
     </>
   );
 };

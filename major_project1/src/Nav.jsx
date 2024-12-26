@@ -8,7 +8,38 @@ const Nav = () => {
     <nav>
 
         <div className="logo">
-          <img src="vite.svg" alt="img" />
+          <img src="image.png" alt="img" />
+        </div>
+        <ul>
+            <li>
+                <Link to={'/home'}>Home</Link>
+
+            </li>
+            <li>
+                <Link to={''}>TvShow</Link>
+                
+            </li>
+        
+            <li>
+                <Link to={''}>Sports</Link>
+                
+            </li>
+            <li>
+                <Link to={''}>Movie</Link>
+                
+            </li>
+            <li>
+                <Link to={''}>Premium</Link>
+                
+            </li>
+            <li>
+                <Link to={''}>News</Link>
+                
+            </li>
+            
+        </ul>
+        <div className="search">
+          <input type="text" placeholder='Search Movies/Webseries&Others' />
         </div>
         <ul>
             <li>
@@ -19,8 +50,8 @@ const Nav = () => {
                 <Link to={'/admin'}>admin</Link>
                 
             </li>
-            <li>
-                <Link to={'/login'}>login</Link>
+            <li className='log'>
+                <Link to={'/login'}>login/register</Link>
                 
             </li>
             
