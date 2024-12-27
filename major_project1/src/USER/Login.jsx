@@ -31,7 +31,7 @@ const Login = () => {
     const user = user_data.find(i => i.email === email);
     if (user) {
       if (user.password === password) {
-        navigate(`/user/${email}`)
+        navigate(`/user_profile/${email}`)
         
       } else {
         setError("Invalid password");
