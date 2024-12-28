@@ -36,13 +36,7 @@ const Nav = () => {
                 <Link to={''}>News</Link>
                 
             </li>
-            
-        </ul>
-        <div className="search">
-          <input type="text" placeholder='Search Movies/Webseries&Others' />
-        </div>
-        <ul>
-            <li>
+                    <li>
                 <Link to={'/'}>signup</Link>
 
             </li>
@@ -50,6 +44,20 @@ const Nav = () => {
                 <Link to={'/admin'}>admin</Link>
                 
             </li>
+            
+        </ul>
+        <div className="search">
+          <input type="text" placeholder='Search Movies/Webseries&Others' />
+        </div>
+        <ul>
+            {/* <li>
+                <Link to={'/'}>signup</Link>
+
+            </li>
+            <li>
+                <Link to={'/admin'}>admin</Link>
+                
+            </li> */}
             <li className='log'>
                 <Link to={'/login'}>login/register</Link>
                 
