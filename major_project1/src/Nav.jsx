@@ -50,14 +50,14 @@ const Nav = () => {
           <input type="text" placeholder='Search Movies/Webseries&Others' />
         </div>
         <ul>
-            {/* <li>
+            <li>
                 <Link to={'/'}>signup</Link>
 
-            </li> */}
-            {/* <li>
+            </li> 
+             <li>
                 <Link to={'/admin'}>admin</Link>
                 
-            </li> */}
+            </li>
             <li className='log'>
                 <Link to={'/login'}>login/register</Link>
                 
