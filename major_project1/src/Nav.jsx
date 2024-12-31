@@ -44,10 +44,7 @@ const Nav = () => {
                 <Link to={'/admin'}>admin</Link>
                 
             </li>
-            <li>
-                <Link to={'/admin'}>admin</Link>
-                
-            </li>
+      
             
         </ul>
         <div className="search">
