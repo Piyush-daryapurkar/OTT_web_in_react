@@ -36,14 +36,7 @@ const Nav = () => {
                 <Link to={''}>News</Link>
                 
             </li>
-                    <li>
-                <Link to={'/'}>signup</Link>
-
-            </li>
-            <li>
-                <Link to={'/admin'}>admin</Link>
-                
-            </li>
+         
       
             
         </ul>
