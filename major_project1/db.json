@@ -1,12 +1,6 @@
 {
   "user_data": [
     {
-      "id": "7074",
-      "name": "shweta",
-      "email": "shweta@gmail.com",
-      "password": "1234"
-    },
-    {
       "name": "manish alonkar",
       "email": "manish@gmail.com",
       "password": "1234",
@@ -101,6 +95,12 @@
       "name": "",
       "email": "",
       "password": ""
+    },
+    {
+      "id": "6930",
+      "name": "piyush",
+      "email": "piyushdaryapurkar3@gmail.com",
+      "password": "1233"
     }
   ],
   "user_data1": [

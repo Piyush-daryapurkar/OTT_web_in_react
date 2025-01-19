@@ -12,6 +12,10 @@ nav{
     align-items: center;
     justify-content: space-between;
 }
+.logo img{
+    width: 80;
+    height: 80px;
+}
 nav ul{
     display: flex;
     gap: 20px;

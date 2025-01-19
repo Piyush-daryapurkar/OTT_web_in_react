@@ -8,6 +8,8 @@ const User_signup = () => {
     const [name,updatename]=useState("")
     const [email,updateemail]=useState("")
     const [password,updatepassword]=useState("")
+
+    
     const user_data1=JSON.parse(localStorage.getItem("user_data"))
     console.log(user_data1)
     const adddata=async(e)=>{
@@ -30,8 +32,8 @@ const User_signup = () => {
     }
       return (
         <>
-        
-      <div className="user_boss">
+        <div className="sign_top">
+        <div className="user_boss">
         <h1 className='user-h1'>Signup here</h1>
       <form action="" className='user-form'>
         <input className='user-input' type="text" value={name} onChange={(e)=>updatename(e.target.value)}  placeholder='Enter Your Name'/> <br />
@@ -42,6 +44,9 @@ const User_signup = () => {
         <p className='user-para'>if you are allredy registerd or signup so go to <span className='user-span'>login</span></p>
         </form>
       </div>
+        </div>
+        
+
         </>
       )
       

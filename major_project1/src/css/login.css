@@ -1,3 +1,4 @@
+
 .login-boss{
     height: 60vh;
     width: 44%;
@@ -6,21 +7,23 @@
     align-items: center;
     align-content: center;
     justify-items: center;
-    border: dashed;
+    border: transparent;
     margin-left: 400px;
     margin-top: 100px;
     border-radius: 20px;
-    background-image: url('bg.png');
+    background-image: url('bg1.webp');
+    box-shadow: 10px 10px 15px 15px rgba(10, 5, 5, 0.5);
 }
 
 .login-input{
     height: 40px;
-    width: 460px;
+    width: 360px;
     border-radius: 10px;
     border: transparent;
     box-shadow: inset;
     margin-top: 20px;
     padding: 10px;
+    background-color:black;
 }
 .login-form{
  
@@ -35,7 +38,6 @@
     margin-top: 20px;
     width: 90px;
     height: 40px;
-    padding: 10px;
     border-radius: 10px;
     font-size: 18px;
     border: transparent;
@@ -44,12 +46,9 @@
     margin-top: 20px;
     width: 90px;
     height: 40px;
-    padding: 10px;
     border-radius: 10px;
     font-size: 18px;
-    letter-spacing: 1px;
-    padding: 10px;
-    background-color: rgb(12, 13, 56);
+    background-color: rgb(200, 45, 45);
     /* background-image: url('bg.png'); */
     color: white;
     transition: .3s;

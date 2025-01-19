@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { updateuser } from './api/userService';
 import { useNavigate } from 'react-router-dom';
+import "../src/css/useredit.css"
 
 const Useredit = () => {
   const navigate = useNavigate();
@@ -46,7 +47,6 @@ const Useredit = () => {
   return (
     <div className="useredit-boss">
       {error && <div className="error-message">{error}</div>}
-      <h2 className='useredit-boss'>Edit User</h2>
       <form onSubmit={edit} className='useredit-form'>
         {/* <label>Name</label> */}
         <input

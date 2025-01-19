@@ -4,7 +4,11 @@ import './css/home.css'
 const Home = () => {
   return (
     <>
-   <img className='img' src="th.jpg" alt="" />
+  
+
+
+
+
     </>
   )
 }
