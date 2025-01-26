@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { getuser, adduser, deleteuser } from './api/userService';
 import { useNavigate } from 'react-router-dom';
 import { Button, Form } from 'react-bootstrap';
+// import '../src/css/admin.css'
 
 const Admin = () => {
     const navigate = useNavigate();

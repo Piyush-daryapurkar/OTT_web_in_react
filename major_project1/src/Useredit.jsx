@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { updateuser } from './api/userService';
 import { useNavigate } from 'react-router-dom';
-import "../src/css/useredit.css"
+// import "../src/css/useredit.css"
 
 const Useredit = () => {
   const navigate = useNavigate();
@@ -45,12 +45,12 @@ const Useredit = () => {
   };
 
   return (
-    <div className="useredit-boss">
+    <div className="useredit-bosss">
       {error && <div className="error-message">{error}</div>}
       <form onSubmit={edit} className='useredit-form'>
         {/* <label>Name</label> */}
         <input
-        className='useredit-input'
+        className='usered-input'
           type="text"
           value={name}
           onChange={(e) => updatename(e.target.value)}
@@ -59,7 +59,7 @@ const Useredit = () => {
         
         {/* <label>Email</label> */}
         <input
-        className='useredit-input'
+        className='usered-input'
           type="email"
           value={email}
           onChange={(e) => updateemail(e.target.value)}
@@ -68,7 +68,7 @@ const Useredit = () => {
         
         {/* <label>Password</label> */}
         <input
-        className='useredit-input'
+        className='usered-input'
           type="password"
           value={password}
           onChange={(e) => updatepassword(e.target.value)}

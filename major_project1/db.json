@@ -13,12 +13,6 @@
       "password": "1234"
     },
     {
-      "id": "60da",
-      "name": "piyush daryapurkar",
-      "email": "piyush@gmail.com",
-      "password": "1234"
-    },
-    {
       "id": "fa0f",
       "name": "piyush",
       "email": "piyush20@gmail.com",
@@ -29,86 +23,6 @@
       "name": "taha ",
       "email": "taha@gmail.com",
       "password": "1234"
-    },
-    {
-      "id": "30db",
-      "name": "",
-      "email": "",
-      "password": ""
-    },
-    {
-      "id": "fbda",
-      "name": "",
-      "email": "",
-      "password": ""
-    },
-    {
-      "id": "94c5",
-      "name": "",
-      "email": "",
-      "password": ""
-    },
-    {
-      "id": "2699",
-      "name": "piyush",
-      "email": "piyushdaryapurkar309@gmail.com",
-      "password": "1234"
-    },
-    {
-      "id": "df73",
-      "name": "bebo@gmail.com",
-      "email": "bebo@gmail.com",
-      "password": "1234"
-    },
-    {
-      "id": "3f13",
-      "name": "",
-      "email": "",
-      "password": ""
-    },
-    {
-      "id": "0f9b",
-      "name": "",
-      "email": "",
-      "password": ""
-    },
-    {
-      "id": "a05a",
-      "name": "shweta@gmail.com",
-      "email": "",
-      "password": ""
-    },
-    {
-      "id": "4597",
-      "name": "",
-      "email": "",
-      "password": ""
-    },
-    {
-      "id": "2923",
-      "name": "piyush",
-      "email": "piyushdaryapurkar309@gmail.com",
-      "password": ""
-    },
-    {
-      "id": "23c9",
-      "name": "",
-      "email": "",
-      "password": ""
-    },
-    {
-      "id": "6930",
-      "name": "piyush",
-      "email": "piyushdaryapurkar3@gmail.com",
-      "password": "1233"
-    }
-  ],
-  "user_data1": [
-    {
-      "id": "1",
-      "name": "honey",
-      "email": "honey@gmail.com",
-      "password": "456"
     }
   ]
 }

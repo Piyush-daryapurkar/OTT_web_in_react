@@ -8,7 +8,7 @@ const Nav = () => {
     <nav>
 
         <div className="logo">
-          <img src="image.png" alt="img" />
+          <h1 id='logo'>Net <span id='logoSpan'>FLAX</span></h1>
         </div>
         <ul>
             <li>
@@ -44,14 +44,14 @@ const Nav = () => {
           <input type="text" placeholder='Search Movies/Webseries&Others' />
         </div>
         <ul>
-            <li>
+            {/* <li>
                 <Link to={'/'}>signup</Link>
 
-            </li> 
-             <li>
+            </li>  */}
+             {/* <li>
                 <Link to={'/admin'}>admin</Link>
                 
-            </li>
+            </li> */}
             <li className='log'>
                 <Link to={'/login'}>login/register</Link>
                 

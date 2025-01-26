@@ -2,7 +2,8 @@
     font-family: NotoSansRegular,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue;
 }
 .sign_top{
-    background-color: rgb(210, 210, 216);
+    /* background-color: rgb(210, 210, 216); */
+    background-image: url('bgnv.jpg');
     height: 100vh;
     width: 100%;
     padding: 60px;
@@ -10,15 +11,13 @@
 .user_boss{
     height: 55vh;
     width: 44%;
-    /* background-color:rgb(35, 38, 112); */
-    background-image: url('bg1.webp');
 
     justify-content: center;
     align-items: center;
     align-content: center;
     justify-items: center;
     text-align: center;
-    border:thick;
+    border: rgb(7, 7, 39) dashed;
     margin-top: 36px;
     margin-left: 400px;
     border-radius: 20px;

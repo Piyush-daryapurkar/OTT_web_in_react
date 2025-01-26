@@ -4,10 +4,29 @@
     box-sizing: border-box;
     font: inherit;
 }
+#logo{
+    font-size: 24px;
+    color: white;
+    font: bolder;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 10px;
+
+}
+#logoSpan{
+    font-size: 30px;
+    color: red;
+    font: bolder;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 6px;
+
+}
 nav{
-    height: 12vh;
+    height: 13vh;
     width: 100%;
-    background-color: rgb(2, 21, 53);
+    /* background-color: rgb(2, 21, 53); */
+    background-image: url('navbarBg.jpg');
     display: flex;
     align-items: center;
     justify-content: space-between;
