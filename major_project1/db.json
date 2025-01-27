@@ -1,7 +1,7 @@
 {
   "user_data": [
     {
-      "name": "manish alonkar",
+      "name": "manish alonkarr",
       "email": "manish@gmail.com",
       "password": "1234",
       "id": "73f5"
@@ -22,6 +22,36 @@
       "id": "5d51",
       "name": "taha ",
       "email": "taha@gmail.com",
+      "password": "1234"
+    },
+    {
+      "id": "064f",
+      "name": "piyush",
+      "email": "piyushdaryapurkar309@gmail.com",
+      "password": "1"
+    },
+    {
+      "id": "4645",
+      "name": "piyush",
+      "email": "piyushdaryapurkar309@gmail.com",
+      "password": "1"
+    },
+    {
+      "id": "05fd",
+      "name": "priyanka",
+      "email": "chanchal@gmail.com",
+      "password": "c"
+    },
+    {
+      "id": "5e51",
+      "name": "piyushsss",
+      "email": "piyushdaryakar309@gmail.com",
+      "password": "1"
+    },
+    {
+      "id": "9bf5",
+      "name": "ani",
+      "email": "ani@gmail.com",
       "password": "1234"
     }
   ]

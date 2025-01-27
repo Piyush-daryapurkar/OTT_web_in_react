@@ -1,37 +1,48 @@
-
+.log-main{
+    width: 100%;
+    height: 90vh;
+    background-image: url('sgbg.jpg');
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+}
 .login-boss{
     height: 60vh;
     width: 44%;
-    background-color:rgb(35, 38, 112);
+    background-image: url('sgbg.jpg');
     justify-content: center;
     align-items: center;
     align-content: center;
     justify-items: center;
     border: transparent;
-    margin-left: 400px;
-    margin-top: 100px;
     border-radius: 20px;
-    background-image: url('bg1.webp');
+    
     box-shadow: 10px 10px 15px 15px rgba(10, 5, 5, 0.5);
 }
 
 .login-input{
     height: 40px;
-    width: 360px;
+    width: 400px;
     border-radius: 10px;
     border: transparent;
     box-shadow: inset;
-    margin-top: 20px;
+    margin-top: 30px;
     padding: 10px;
-    background-color:black;
+    color:black;
+    font-size: 15px;
 }
 .login-form{
  
     text-align: center;
 }
 .login-h1{
-    font-size: 28px;
-    color: whitesmoke;
+    font-size: 40px;
+    color: rgb(8, 8, 121);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bolder;
+    background-color: #ebe0e0;
+    border-radius: 10px;
+    margin-bottom: 16px;
 }
 
 .login-btn{

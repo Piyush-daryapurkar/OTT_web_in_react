@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { getuser, adduser, deleteuser } from './api/userService';
 import { useNavigate } from 'react-router-dom';
 import { Button, Form } from 'react-bootstrap';
-// import '../src/css/admin.css'
+import '../src/css/admin.css'
 
 const Admin = () => {
     const navigate = useNavigate();
@@ -65,8 +65,8 @@ const Admin = () => {
     return (
         <div className="admin-container">
             <h1>Super Admin Dashboard</h1>
-            <table className="table table-striped">
-                <thead>
+            <table className="table-striped">
+                <thead className='admin-thead'> 
                     <tr>
                         <th>id</th>
                         <th>name</th>
@@ -76,7 +76,7 @@ const Admin = () => {
                         <th>update</th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody className='admin-tbody'>
                     {user_data.map((data) => (
                         <tr key={data.id}>
                             <td>{data.id}</td>
@@ -84,54 +84,58 @@ const Admin = () => {
                             <td>{data.email}</td>
                             <td>{data.password}</td>
                             <td>
-                                <button className="delete" onClick={() => handleDelete(data.id)}>Delete</button>
+                                <button className="delete-btn" onClick={() => handleDelete(data.id)}>Delete</button>
                             </td>
                             <td>
-                                <button className="update" onClick={() => handleEdit(data.id)}>Update</button>
+                                <button className="update-btn" onClick={() => handleEdit(data.id)}>Update</button>
                             </td>
                         </tr>
                     ))}
                 </tbody>
             </table>
 
-            <Form onSubmit={handleAddUser}>
+           <div className="input-from">
+           <Form className='admin-form' onSubmit={handleAddUser}>
                 <Form.Group controlId="formName">
-                    <Form.Label>Name</Form.Label>
                     <Form.Control
                         type="text"
                         name="name"
+                        placeholder='Enter Your Name'
                         value={form.name}
                         onChange={handleChange}
                         required
                     />
                 </Form.Group>
 
-                <Form.Group controlId="formEmail">
+                <Form.Group className='admin-form' controlId="formEmail">
                     <Form.Label>Email</Form.Label>
                     <Form.Control
                         type="email"
                         name="email"
+                        placeholder='Enter Your Email'
                         value={form.email}
                         onChange={handleChange}
                         required
                     />
                 </Form.Group>
 
-                <Form.Group controlId="formPassword">
+                <Form.Group className='admin-form' controlId="formPassword">
                     <Form.Label>Password</Form.Label>
                     <Form.Control
                         type="password"
                         name="password"
+                        placeholder='Enter Your Password'
                         value={form.password}
                         onChange={handleChange}
                         required
                     />
                 </Form.Group>
 
-                <Button type="submit" variant="primary" className="mt-3">
+                <Button className='from-btn' type="submit" variant="primary">
                     Add User
                 </Button>
             </Form>
+           </div>
         </div>
     );
 };

@@ -31,7 +31,8 @@ const Login = () => {
     const user = user_data.find(i => i.email === email);
     if (user) {
       if (user.password === password) {
-        navigate(`/user_profile/${email}`)
+        // navigate(`/user_profile/${email}`)
+        navigate('/home')
         
       } else {
         setError("Invalid password");
@@ -43,7 +44,8 @@ const Login = () => {
 
   return (
     <>
-     <div className="login-boss">
+    <div className="log-main">
+    <div className="login-boss">
      <h1 className='login-h1'>Login Here</h1>
       <form className='login-form' onSubmit={user_login}>
         <div>
@@ -72,6 +74,7 @@ const Login = () => {
         <button className='login-btn' type="submit">Login</button>
       </form>
      </div>
+    </div>
     </>
   );
 };
