@@ -1,4 +1,26 @@
 
+.video-slider {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  padding: 10px;
+}
+
+.video-box {
+  min-width: 320px;
+  background: #000;
+  color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 10px;
+}
+/* 
 
 
 
@@ -35,7 +57,7 @@
 
 /* General Reset */
 
-.msin_div {
+/* .msin_div {
   font-family: Arial, sans-serif;
   display: flex;
   justify-content: center;
@@ -44,9 +66,9 @@
 }
 
 /* Slider Container */
-.slider-container {
+/* .slider-container {
   position: relative;
-  width: 100%;} /* Set specific limits */
+  width: 100%;} Set specific limits */
   /* 
 }
 
@@ -100,13 +122,13 @@
 } */
 
 /* Auto navigation */
-.navigation-auto {
+/* .navigation-auto {
   position: absolute;
   display: none; /* Hidden by default */
-}
+
 
 /* Manual navigation */
-.navigation-manual {
+/* .navigation-manual {
   position: absolute;
   width: 100%;
   bottom: 10px;
@@ -142,10 +164,10 @@
 
 #radio4:checked ~ .slides {
   transform: translateX(-300%);
-}
+} */
 
 /* Arrows */
-.arrows {
+/* .arrows {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -170,4 +192,4 @@
 
 .arrow:hover {
   background: rgba(0, 0, 0, 0.8);
-}
+}  */

@@ -41,6 +41,9 @@ const Login = () => {
       setError("Invalid email");
     }
   };
+  const goSignup=()=>{
+    navigate("/")
+  }
 
   return (
     <>
@@ -72,6 +75,8 @@ const Login = () => {
         </div>
         {error && <p style={{ color: 'red' }}>{error}</p>} {/* Display error */}
         <button className='login-btn' type="submit">Login</button>
+        <p className='user-para'>if you are not registerd please go to <span onClick={goSignup} className='user-span'>signup</span></p>
+
       </form>
      </div>
     </div>

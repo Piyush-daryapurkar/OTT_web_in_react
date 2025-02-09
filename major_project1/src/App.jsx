@@ -14,7 +14,6 @@ function App() {
       <Router>
         <Nav />
         <Routes>
-          
           <Route path="/" element={<User_signup />} />
           <Route path="/home" element={<Home/>} />
           <Route path="/admin" element={<Admin />} />

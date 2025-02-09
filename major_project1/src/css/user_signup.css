@@ -71,4 +71,9 @@
 }
 .user-span{
     color: red;
+    cursor: pointer;
+}
+.user-span:hover{
+    color:black;
+    cursor: pointer;
 }

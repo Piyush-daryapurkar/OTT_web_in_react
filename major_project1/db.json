@@ -53,6 +53,12 @@
       "name": "ani",
       "email": "ani@gmail.com",
       "password": "1234"
+    },
+    {
+      "id": "251a",
+      "name": "tushar",
+      "email": "tushar@gmail.com",
+      "password": "1234"
     }
   ]
 }

@@ -30,6 +30,9 @@ const User_signup = () => {
 
     }
     }
+    const goLogin=()=>{
+      navigate("/login")
+    }
       return (
         <>
         <div className="sign_top">
@@ -41,7 +44,7 @@ const User_signup = () => {
 
         <input className='user-input' type="text"  value={password} onChange={(e)=>updatepassword(e.target.value)}placeholder='Enter Your Password'/> <br />
         <button className='user-btn' onClick={adddata}>signup</button><br></br><br />
-        <p className='user-para'>if you are allredy registerd or signup so go to <span className='user-span'>login</span></p>
+        <p className='user-para'>if you are allredy registerd or signup so go to <span onClick={goLogin} className='user-span'>login</span></p>
         </form>
       </div>
         </div>
