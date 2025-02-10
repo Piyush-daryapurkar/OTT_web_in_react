@@ -1,23 +1,35 @@
-import React from "react";
+import React, { useState } from "react";
 import { useVideo } from "./api/VideoContext";
 import './css/home.css'
-
 const Home = () => {
   const { videos } = useVideo();
+  const [playingVideo, setPlayingVideo] = useState(null); // Track which video is playing
 
   return (
     <div>
       <h2>Home Section</h2>
       <div className="video-slider">
-        {videos
-          .filter((video) => video.category === "Home")
+        {
+        videos.filter((video) => video.category === "Home")
           .map((video) => (
             <div key={video.id} className="video-box">
               <h3>{video.title}</h3>
-              <video width="320" height="240" controls>
-                <source src={video.url} type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
+              {playingVideo === video.id ? (
+                <video width="320" height="180" controls autoPlay>
+                  <source src={video.url} type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              ) : (
+                <img
+                  src={video.thumbnail}
+                  alt={video.title}
+                  width="320"
+                  height="180"
+                  onClick={() => setPlayingVideo(video.id)}
+                  style={{ cursor: "pointer", borderRadius: "10px" }}
+                />
+                
+              )}
             </div>
           ))}
       </div>
@@ -26,6 +38,7 @@ const Home = () => {
 };
 
 export default Home;
+
 
 
 

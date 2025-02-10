@@ -9,7 +9,7 @@ export const VideoProvider = ({ children }) => {
       title: "Action Movie",
       category: "Home",
       thumbnail: "sslider4.webp",
-      url: "https://www.w3schools.com/html/mov_bbb.mp4",
+      url: "https://res.cloudinary.com/dennsgomu/video/upload/v1739125804/001-Learn_Django_with_Dominic_Vacchiano_jgjwnt.mp4",
     },
     {
       id: 2,
