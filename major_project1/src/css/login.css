@@ -15,11 +15,9 @@
     align-content: center;
     justify-items: center;
     border: transparent;
-    border-radius: 21px;
-    
+    border-radius: 20px;   
     box-shadow: 10px 10px 15px 15px rgba(10, 5, 5, 0.5);
 }
-
 .login-input{
     height: 40px;
     width: 400px;
@@ -44,7 +42,6 @@
     border-radius: 10px;
     margin-bottom: 16px;
 }
-
 .login-btn{
     margin-top: 20px;
     width: 90px;
@@ -64,4 +61,3 @@
     color: white;
     transition: .3s;
 }
-
