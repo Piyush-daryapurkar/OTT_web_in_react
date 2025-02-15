@@ -29,6 +29,7 @@ const Home = () => {
                   style={{ cursor: "pointer", borderRadius: "10px" }}
                 />
                 
+                
               )}
             </div>
           ))}
