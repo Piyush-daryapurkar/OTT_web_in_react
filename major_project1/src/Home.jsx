@@ -26,7 +26,7 @@ const Home = () => {
                   width="320"
                   height="180"
                   onClick={() => setPlayingVideo(video.id)}
-                  style={{ cursor: "pointer", borderRadius: "10px" }}
+                  style={{ cursor: "pointer", borderRadius: "12px" }}
                 />
                 
                 
