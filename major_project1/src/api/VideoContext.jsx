@@ -96,6 +96,13 @@ export const VideoProvider = ({ children }) => {
     thumbnail: "sslider6.webp",
     url: "https://www.w3schools.com/html/mov_bbb.mp4",
   },
+  {
+    id: 13,
+    title: "Comedy Show",
+    category: "Home",
+    thumbnail: "sslider6.webp",
+    url: "https://www.w3schools.com/html/mov_bbb.mp4",
+  },
 
 
 
