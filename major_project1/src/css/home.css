@@ -8,6 +8,7 @@
 
 .video-box {
   min-width: 320px;
+  height: 60vh;
   background: #000;
   color: #fff;
   padding: 10px;
@@ -20,63 +21,7 @@
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 10px;
 }
-/* 
 
-
-
-.sslider {
-  display: flex;
-  overflow-x: auto;
-  width: 100%;
-  
-  padding: 10px;
-  gap: 10px;
-  scroll-behavior: smooth;
-}
-
-.sslider::-webkit-scrollbar {
-  display: none;
-}
-
-.box {
-  flex: 0 0 calc(100% / 6 - 10px);
-  height: 44vh;
-  background-color: #050812;
-  border-radius: 10px;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  font-size: 1.5rem;
-  transition: height 0.3s ease;
-  cursor: pointer;
-}
-
-.box:hover {
-  height: 46vh;
-}
-
-/* General Reset */
-
-/* .msin_div {
-  font-family: Arial, sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #f0f0f0;
-}
-
-/* Slider Container */
-/* .slider-container {
-  position: relative;
-  width: 100%;} Set specific limits */
-  /* 
-}
-
-
-///////////////////////////
-
-
-/* General Reset */
 
 .div-main {
   display: flex;

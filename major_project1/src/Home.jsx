@@ -15,7 +15,7 @@ const Home = () => {
             <div key={video.id} className="video-box">
               <h3>{video.title}</h3>
               {playingVideo === video.id ? (
-                <video width="320" height="180" controls autoPlay>
+                <video width="100%" height="100%" controls autoPlay>
                   <source src={video.url} type="video/mp4" />
                   Your browser does not support the video tag.
                 </video>
@@ -23,8 +23,8 @@ const Home = () => {
                 <img
                   src={video.thumbnail}
                   alt={video.title}
-                  width="320"
-                  height="180"
+                  width="100%"
+                  height="100%"
                   onClick={() => setPlayingVideo(video.id)}
                   style={{ cursor: "pointer", borderRadius: "12px" }}
                 />

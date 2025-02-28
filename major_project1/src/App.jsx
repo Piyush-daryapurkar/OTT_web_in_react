@@ -3,6 +3,8 @@ import Admin from './Admin';
 import User_signup from './USER/User_signup';
 import Nav from './Nav';
 import Useredit from './Useredit';
+import Movie from './USER/Movie';
+import Sports from './Sports';
 import Login from './USER/Login';
 import User_profile from './USER/User_profile';
 import Home from './Home';
@@ -20,6 +22,10 @@ function App() {
           <Route path="/useredit/:id" element={<Useredit />} />
           <Route path="/login" element={<Login />} />
           <Route path='/profile/:user_email' element={<User_profile/>}></Route>
+          <Route path="/movie" element={<Movie />} />
+          <Route path="/sports" element={<Sports />} />
+
+
 
         </Routes>
       </Router>

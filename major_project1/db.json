@@ -59,6 +59,12 @@
       "name": "tushar",
       "email": "tushar@gmail.com",
       "password": "1234"
+    },
+    {
+      "id": "5d33",
+      "name": "godha",
+      "email": "godha@gmail.com",
+      "password": "1234"
     }
   ]
 }

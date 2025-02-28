@@ -21,11 +21,11 @@ const Nav = () => {
             </li>
         
             <li>
-                <Link to={''}>Sports</Link>
+                <Link to={'sports'}>Sports</Link>
                 
             </li>
             <li>
-                <Link to={''}>Movie</Link>
+                <Link to={'/movie'}>Movie</Link>
                 
             </li>
             <li>
