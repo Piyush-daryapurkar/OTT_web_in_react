@@ -1,13 +1,71 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import { useVideo } from "./api/VideoContext";
 import './css/home.css'
 const Home = () => {
   const { videos } = useVideo();
-  const [playingVideo, setPlayingVideo] = useState(null); // Track which video is playing
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [playingVideo, setPlayingVideo] = useState(null);
+
+  const filteredVideos = videos.filter((video) => video.category === "Home");
+
+  // Auto-slide every 4 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      handleNextSlide();
+    }, 4000);
+    return () => clearInterval(interval);
+  }, [currentIndex]);
+
+  const handleNextSlide = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === filteredVideos.length - 1 ? 0 : prevIndex + 1
+    );
+  };
+
+  const handlePrevSlide = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === 0 ? filteredVideos.length - 1 : prevIndex - 1
+    );
+  };
+
 
   return (
     <div>
-      <h2>Home Section</h2>
+      {/* <h2>Home Section</h2> */}
+
+
+
+    <div className="home-container">
+      {/* <h2 className="home-title">Home Section</h2> */}
+      <div className="slider-wrapper">
+        <button className="slider-button prev-button" onClick={handlePrevSlide}>&#10094;</button>
+        <div className="slider-track" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
+          {filteredVideos.map((video) => (
+            <div key={video.id} className="slider-item">
+              <h3 className="video-title">{video.title}</h3>
+              {playingVideo === video.id ? (
+                <video className="video-player" controls autoPlay>
+                  <source src={video.url} type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              ) : (
+                <img
+                  className="video-thumbnail"
+                  src={video.thumbnail}
+                  alt={video.title}
+                  onClick={() => setPlayingVideo(video.id)}
+                />
+              )}
+            </div>
+          ))}
+        </div>
+        <button className="slider-button next-button" onClick={handleNextSlide}>&#10095;</button>
+      </div>
+    </div>
+
+
+
+
       <div className="video-slider">
         {
         videos.filter((video) => video.category === "Home")
@@ -24,12 +82,10 @@ const Home = () => {
                   src={video.thumbnail}
                   alt={video.title}
                   width="100%"
-                  height="100%"
+                  height="96%"
                   onClick={() => setPlayingVideo(video.id)}
-                  style={{ cursor: "pointer", borderRadius: "12px" }}
-                />
-                
-                
+                  style={{ cursor: "pointer", borderRadius: "10px" }}
+                /> 
               )}
             </div>
           ))}
@@ -39,82 +95,3 @@ const Home = () => {
 };
 
 export default Home;
-
-
-
-
-
-
-// import React from 'react'
-// import './css/home.css'
-
-// const Home = () => {
-//   return (
-//     <>
-
-//     <div className="div-main">
-//     <div className="slider">
-//     <div class="slides">
-//       <input type="radio" name="radio-btn" id="radio1" checked/>
-//       <input type="radio" name="radio-btn" id="radio2"/>
-//       <input type="radio" name="radio-btn" id="radio3"/>
-//       <input type="radio" name="radio-btn" id="radio4"/>
-
-//       <div class="slide first">
-//         <img src="slider1.webp" alt="Slide 1"/>
-//       </div>
-//       <div class="slide">
-//       <img src="sslider2.webp" alt="" height="100%" width="100%" />      </div>
-//       <div class="slide">
-//         <img src="https://via.placeholder.com/800x400/3357FF/FFFFFF?text=Slide+3" alt="Slide 3"/>
-//       </div>
-//       <div class="slide">
-//         <img src="https://via.placeholder.com/800x400/FF33A1/FFFFFF?text=Slide+4" alt="Slide 4"/>
-//       </div>
-
-//       <div class="navigation-auto">
-//         <div class="auto-btn1"></div>
-//         <div class="auto-btn2"></div>
-//         <div class="auto-btn3"></div>
-//         <div class="auto-btn4"></div>
-//       </div>
-//     </div>
-
-//     <div class="navigation-manual">
-//       <label for="radio1" class="manual-btn"></label>
-//       <label for="radio2" class="manual-btn"></label>
-//       <label for="radio3" class="manual-btn"></label>
-//       <label for="radio4" class="manual-btn"></label>
-//     </div>
-
-//     <div class="arrows">
-//       <label for="radio4" class="arrow left">&#10094;</label>
-//       <label for="radio2" class="arrow right">&#10095;</label>
-//     </div>
-//   </div>
-//     </div>
-
-
- 
-//      <h1>trending near you </h1>
-
-//     <div class="sslider">
-//         <div className="box"><img src="sslider1.webp" alt="" height="100%" width="100%" /></div>
-//         <div className="box"><img src="sslider2.webp" alt="" height="100%" width="100%" /></div>
-//         <div className="box"><img src="sslider3.webp" alt="" height="100%" width="100%" /></div>
-//         <div className="box"><img src="sslider4.webp" alt="" height="100%" width="100%" /></div>
-//         <div className="box"><img src="sslider5.webp" alt="" height="100%" width="100%" /></div>
-//         <div className="box"><img src="sslider6.webp" alt="" height="100%" width="100%" /></div>
-//         <div className="box"><img src="sslider7.webp" alt="" height="100%" width="100%" /></div>
-//         <div className="box"><img src="sslider8.webp" alt="" height="100%" width="100%" /></div>
-//         <div className="box"><img src="sslider9.webp" alt="" height="100%" width="100%" /></div>
-//         <div className="box"><img src="sslider10.webp" alt="" height="100%" width="100%" /></div>
-//         <div className="box"><img src="sslider1.webp" alt="" height="100%" width="100%" /></div>
-//         <div className="box"><img src="sslider1.webp" alt="" height="100%" width="100%" /></div>
-//     </div>
-
-//     </>
-//   )
-// }
-
-// export default Home

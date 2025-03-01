@@ -62,79 +62,79 @@
   transition: transform 0.3s ease;
 }
 
-/* .slide:hover img {
-  transform: scale(1.05);
-} */
-
-/* Auto navigation */
-/* .navigation-auto {
-  position: absolute;
-  display: none; /* Hidden by default */
 
 
-/* Manual navigation */
-/* .navigation-manual {
-  position: absolute;
-  width: 100%;
-  bottom: 10px;
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-}
-
-.manual-btn {
-  width: 12px;
-  height: 12px;
-  border: 2px solid #fff;
-  border-radius: 50%;
-  cursor: pointer;
-  transition: background 0.3s;
-}
-
-.manual-btn:hover {
-  background: #fff;
-}
-
-#radio1:checked ~ .slides {
-  transform: translateX(0);
-}
-
-#radio2:checked ~ .slides {
-  transform: translateX(-100%);
-}
-
-#radio3:checked ~ .slides {
-  transform: translateX(-200%);
-}
-
-#radio4:checked ~ .slides {
-  transform: translateX(-300%);
-} */
-
-/* Arrows */
-/* .arrows {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  pointer-events: none;
-}
-
-.arrow {
-  pointer-events: auto;
-  font-size: 24px;
+/* Home Section Container */
+.home-container {
+  text-align: center;
+  padding: 20px;
+  background: #111;
   color: white;
-  background: rgba(0, 0, 0, 0.5);
-  border: none;
-  border-radius: 50%;
-  padding: 10px;
-  cursor: pointer;
-  transition: background 0.3s;
 }
 
-.arrow:hover {
+/* Title */
+.home-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Slider Wrapper */
+.slider-wrapper {
+  width: 80%;
+  overflow: hidden;
+  position: relative;
+  margin: auto;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
+}
+
+/* Track for sliding videos */
+.slider-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
+}
+
+/* Individual Video Slide */
+.slider-item {
+  flex: 0 0 100%;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Video Player */
+.video-player {
+  width: 100%;
+  height: 400px;
+  border-radius: 10px;
+}
+
+/* Thumbnail Image */
+.video-thumbnail {
+  width: 100%;
+  height: 400px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* Navigation Buttons */
+.slider-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 20px;
+  z-index: 100;
+  border-radius: 50%;
+}
+
+.prev-button { left: 10px; }
+.next-button { right: 10px; }
+
+.slider-button:hover {
   background: rgba(0, 0, 0, 0.8);
-}  */
+}
