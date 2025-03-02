@@ -1,6 +1,6 @@
 import React, { useState,useEffect } from "react";
-import { useVideo } from "./api/VideoContext";
-import './css/home.css'
+import { useVideo } from "../api/VideoContext";
+import '../css/home.css'
 const Home = () => {
   const { videos } = useVideo();
   const [currentIndex, setCurrentIndex] = useState(0);

@@ -5,10 +5,10 @@ import User_signup from './USER/User_signup';
 import Nav from './Nav';
 import Useredit from './Useredit';
 import Movie from './USER/Movie';
-import Sports from './Sports';
+import Sports from './sections/Sports';
 import Login from './USER/Login';
 import User_profile from './USER/User_profile';
-import Home from './Home';
+import Home from './sections/Home';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {

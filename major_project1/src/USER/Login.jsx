@@ -2,11 +2,12 @@ import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { getuser } from '../api/userService';
 import { useNavigate } from 'react-router-dom';
+
 import '../css/login.css'
 
 const Login = () => {
   const navigate=useNavigate();
-  //const { email1 } = useParams();
+  // const { email1} = useParams();
   const [user_data, update_user_data] = useState([]);
   const [email, updateemail] = useState("");
   const [password, updatepassword] = useState("");
@@ -33,6 +34,7 @@ const Login = () => {
       if (user.password === password) {
         // navigate(`/user_profile/${email}`)
         navigate('/home')
+        
         
       } else {
         setError("Invalid password");
