@@ -138,3 +138,85 @@
 .slider-button:hover {
   background: rgba(0, 0, 0, 0.8);
 }
+
+
+
+.homebox-container {
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+}
+
+.homebox-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.homebox-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Ensures 4 videos per row */
+  gap: 15px;
+  padding: 10px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.homebox {
+  background: #1d1d1d;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.homebox:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.homebox-video-title {
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.homebox-thumbnail {
+  width: 100%;
+  height: 180px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: opacity 0.3s ease-in-out;
+  object-fit: cover;
+}
+
+.homebox-thumbnail:hover {
+  opacity: 0.8;
+}
+
+.homebox-video-player {
+  width: 100%;
+  height: 180px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .homebox-grid {
+      grid-template-columns: repeat(3, 1fr); /* 3 videos per row for tablets */
+  }
+}
+
+@media (max-width: 768px) {
+  .homebox-grid {
+      grid-template-columns: repeat(2, 1fr); /* 2 videos per row for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .homebox-grid {
+      grid-template-columns: repeat(1, 1fr); /* 1 video per row for mobile */
+  }
+}

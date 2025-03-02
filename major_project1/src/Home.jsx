@@ -42,7 +42,7 @@ const Home = () => {
         <div className="slider-track" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
           {filteredVideos.map((video) => (
             <div key={video.id} className="slider-item">
-              <h3 className="video-title">{video.title}</h3>
+              {/* <h3 className="video-title">{video.title}</h3> */}
               {playingVideo === video.id ? (
                 <video className="video-player" controls autoPlay>
                   <source src={video.url} type="video/mp4" />
@@ -52,7 +52,7 @@ const Home = () => {
                 <img
                   className="video-thumbnail"
                   src={video.thumbnail}
-                  alt={video.title}
+                  // alt={video.title}
                   onClick={() => setPlayingVideo(video.id)}
                 />
               )}
@@ -68,10 +68,10 @@ const Home = () => {
 
       <div className="video-slider">
         {
-        videos.filter((video) => video.category === "Home")
+        videos.filter((video) => video.category === "Home1")
           .map((video) => (
             <div key={video.id} className="video-box">
-              <h3>{video.title}</h3>
+              {/* <h3>{video.title}</h3> */}
               {playingVideo === video.id ? (
                 <video width="100%" height="100%" controls autoPlay>
                   <source src={video.url} type="video/mp4" />
@@ -80,7 +80,7 @@ const Home = () => {
               ) : (
                 <img
                   src={video.thumbnail}
-                  alt={video.title}
+                  // alt={video.title}
                   width="100%"
                   height="96%"
                   onClick={() => setPlayingVideo(video.id)}
@@ -90,7 +90,35 @@ const Home = () => {
             </div>
           ))}
       </div>
+      
+      <div className="homebox-container">
+      {/* <h2 className="homebox-title">Home Section</h2> */}
+      
+      <div className="homebox-grid">
+        {videos
+          .filter((video) => video.category === "Home")
+          .map((video) => (
+            <div key={video.id} className="homebox">
+              <h3 className="homebox-video-title">{video.title}</h3>
+              {playingVideo === video.id ? (
+                <video width="100%" height="100%" controls autoPlay className="homebox-video-player">
+                  <source src={video.url} type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              ) : (
+                <img
+                  src={video.thumbnail}
+                  alt={video.title}
+                  className="homebox-thumbnail"
+                  onClick={() => setPlayingVideo(video.id)}
+                />
+              )}
+            </div>
+          ))}
+      </div>
     </div>
+    </div>
+    
   );
 };
 

@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Admin from './Admin';
+import Footer from './USER/Footer';
 import User_signup from './USER/User_signup';
 import Nav from './Nav';
 import Useredit from './Useredit';
@@ -28,7 +29,11 @@ function App() {
 
 
         </Routes>
+
+        <Footer/>
+
       </Router>
+      
     </>
   );
 }
