@@ -68,6 +68,29 @@ export const VideoProvider = ({ children }) => {
       url: "https://www.w3schools.com/html/mov_bbb.mp4",
     }, 
     {
+      id: 3,
+      title: "Comedy Show",
+      category: "Home",
+      thumbnail: "main-slider2webp.webp",
+      url: "https://www.w3schools.com/html/mov_bbb.mp4",
+    },
+    {
+      id: 3,
+      title: "Comedy Show",
+      category: "Home",
+      thumbnail: "main-slider2webp.webp",
+      url: "https://www.w3schools.com/html/mov_bbb.mp4",
+    },
+    {
+      id: 3,
+      title: "Comedy Show",
+      category: "Home",
+      thumbnail: "main-slider2webp.webp",
+      url: "https://www.w3schools.com/html/mov_bbb.mp4",
+    },
+    
+
+    {
       id: 4,
       title: "Comedy Show",
       category: "Home",
@@ -134,6 +157,7 @@ export const VideoProvider = ({ children }) => {
       thumbnail: "sslider8.webp",
       url: "https://www.w3schools.com/html/mov_bbb.mp4",
     },
+
 
 
 

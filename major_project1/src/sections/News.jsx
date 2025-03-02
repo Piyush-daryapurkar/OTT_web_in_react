@@ -2,7 +2,7 @@ import React, { useState,useEffect } from "react";
 import { useVideo } from "../api/VideoContext";
 import '../css/home.css'
 
-const Sports = () => {
+const News = () => {
    const { videos } = useVideo();
     const [currentIndex, setCurrentIndex] = useState(0);
     const [playingVideo, setPlayingVideo] = useState(null);
@@ -122,4 +122,4 @@ const Sports = () => {
   )
 }
 
-export default Sports
+export default News

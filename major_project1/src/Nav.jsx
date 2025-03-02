@@ -16,7 +16,7 @@ const Nav = () => {
 
             </li>
             <li>
-                <Link to={''}>TvShow</Link>
+                <Link to={'/tvshow'}>TvShow</Link>
                 
             </li>
         
@@ -28,12 +28,12 @@ const Nav = () => {
                 <Link to={'/movie'}>Movie</Link>
                 
             </li>
-            <li>
+            {/* <li>
                 <Link to={''}>Premium</Link>
                 
-            </li>
+            </li> */}
             <li>
-                <Link to={''}>News</Link>
+                <Link to={'/news'}>News</Link>
                 
             </li>
          
