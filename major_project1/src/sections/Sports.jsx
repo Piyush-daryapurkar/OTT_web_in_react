@@ -40,7 +40,9 @@ const Sports = () => {
       <div className="slider-wrapper">
         <button className="slider-button prev-button" onClick={handlePrevSlide}>&#10094;</button>
         <div className="slider-track" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
-          {filteredVideos.map((video) => (
+          {videos
+          .filter((video) => video.category === "sports-slider")
+          .map((video) => (
             <div key={video.id} className="slider-item">
               {/* <h3 className="video-title">{video.title}</h3> */}
               {playingVideo === video.id ? (
@@ -68,7 +70,7 @@ const Sports = () => {
 
       <div className="video-slider">
         {
-        videos.filter((video) => video.category === "Home1")
+        videos.filter((video) => video.category === "sports-slider2")
           .map((video) => (
             <div key={video.id} className="video-box">
               {/* <h3>{video.title}</h3> */}
@@ -96,10 +98,10 @@ const Sports = () => {
       
       <div className="homebox-grid">
         {videos
-          .filter((video) => video.category === "Home")
+          .filter((video) => video.category === "sports-grid")
           .map((video) => (
             <div key={video.id} className="homebox">
-              <h3 className="homebox-video-title">{video.title}</h3>
+              {/* <h3 className="homebox-video-title">{video.title}</h3> */}
               {playingVideo === video.id ? (
                 <video width="100%" height="100%" controls autoPlay className="homebox-video-player">
                   <source src={video.url} type="video/mp4" />

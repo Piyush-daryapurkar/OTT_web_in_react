@@ -36,11 +36,12 @@ const Home = () => {
 
 
     <div className="home-container">
-      {/* <h2 className="home-title">Home Section</h2> */}
       <div className="slider-wrapper">
         <button className="slider-button prev-button" onClick={handlePrevSlide}>&#10094;</button>
         <div className="slider-track" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
-          {filteredVideos.map((video) => (
+          {/* {filteredVideos.map((video) => ( */}
+          {videos.filter((video) => video.category === "HomeSlider")
+          .map((video) => (
             <div key={video.id} className="slider-item">
               {/* <h3 className="video-title">{video.title}</h3> */}
               {playingVideo === video.id ? (
@@ -96,7 +97,7 @@ const Home = () => {
       
       <div className="homebox-grid">
         {videos
-          .filter((video) => video.category === "Home")
+          .filter((video) => video.category === "home-grid")
           .map((video) => (
             <div key={video.id} className="homebox">
               <h3 className="homebox-video-title">{video.title}</h3>
