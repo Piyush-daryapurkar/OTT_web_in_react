@@ -100,7 +100,7 @@ const Home = () => {
           .filter((video) => video.category === "home-grid")
           .map((video) => (
             <div key={video.id} className="homebox">
-              <h3 className="homebox-video-title">{video.title}</h3>
+              {/* <h3 className="homebox-video-title">{video.title}</h3> */}
               {playingVideo === video.id ? (
                 <video width="100%" height="100%" controls autoPlay className="homebox-video-player">
                   <source src={video.url} type="video/mp4" />
@@ -111,6 +111,7 @@ const Home = () => {
                   src={video.thumbnail}
                   alt={video.title}
                   className="homebox-thumbnail"
+                  width="100%" height="100%"
                   onClick={() => setPlayingVideo(video.id)}
                 />
               )}
